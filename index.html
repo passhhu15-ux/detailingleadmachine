@@ -42,10 +42,52 @@
             z-index: -1;
         }
 
+        /* Header & Navigation */
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 40px;
+            background: rgba(9, 9, 11, 0.8);
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid var(--border-color);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .logo-container {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            font-weight: 800;
+            font-size: 1.2rem;
+            color: var(--text-main);
+            text-decoration: none;
+        }
+
+        .logo-icon {
+            font-size: 1.8rem;
+            background: linear-gradient(135deg, #ea580c, #f97316);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .nav-links a {
+            color: var(--text-muted);
+            text-decoration: none;
+            font-weight: 600;
+            transition: color 0.3s ease;
+        }
+
+        .nav-links a:hover {
+            color: var(--primary-orange);
+        }
+
         .container {
             max-width: 850px;
             margin: 0 auto;
-            padding: 60px 20px;
+            padding: 40px 20px 80px 20px;
         }
 
         .impact-verification {
@@ -53,6 +95,7 @@
             color: #334155;
             text-align: center;
             margin-bottom: 20px;
+            margin-top: 20px;
         }
 
         /* Typography & Gradient Text */
@@ -117,7 +160,7 @@
             object-fit: cover;
         }
 
-        /* Glassmorphism Callouts */
+        /* Glassmorphism Callouts & About Section */
         .callout {
             background: var(--card-bg);
             backdrop-filter: blur(10px);
@@ -139,6 +182,15 @@
         .callout.info { border-left: 4px solid var(--primary-orange); }
 
         .callout-icon { font-size: 1.8rem; }
+
+        .about-image {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 2px solid var(--primary-orange);
+            flex-shrink: 0;
+        }
 
         /* Interactive Toggles */
         details {
@@ -229,16 +281,29 @@
         @media (max-width: 768px) {
             h1 { font-size: 2.2rem; }
             .grid-layout { grid-template-columns: 1fr; }
+            .header { padding: 15px 20px; }
         }
     </style>
 </head>
 <body>
 
+    <!-- Navigation Header -->
+    <header class="header">
+        <a href="#" class="logo-container">
+            <!-- You can replace this icon with a real <img> logo later -->
+            <span class="logo-icon">🏎️</span> 
+            <span class="logo-text">Detailing Lead Machine</span>
+        </a>
+        <nav class="nav-links">
+            <a href="#about">About Us</a>
+        </nav>
+    </header>
+
     <div class="impact-verification">Impact-Site-Verification: fb4a2231-5131-4ae2-84b4-e7d292c25bf1</div>
 
     <div class="container">
         <h1>The Ultimate Local SEO Playbook<br>for Auto Detailing Studios</h1>
-        <div class="subtitle">Brought to you by DetailingLeadMachine.com</div>
+        <div class="subtitle">Brought to you by detailingleadmachine.it.com</div>
 
         <!-- Section 1 -->
         <h2>1. The ROI of Local SEO for Detailing</h2>
@@ -325,6 +390,17 @@
             <li><input type="checkbox"> Run a Domain Overview on your top 3 local competitors.</li>
             <li><input type="checkbox"> Build a target list of 10 high-intent keywords to conquer.</li>
         </ul>
+
+        <!-- NEW ABOUT US SECTION -->
+        <h2 id="about">About Us</h2>
+        <div class="callout info" style="align-items: center;">
+            <!-- Placeholder for your actual logo or headshot -->
+            <img src="https://images.unsplash.com/photo-1618365908648-e71bd5716cba?auto=format&fit=crop&w=150&q=80" alt="Detailing Lead Machine Logo" class="about-image">
+            <div>
+                <p style="color: var(--text-main); margin-top: 0;">At <strong style="color: white;">Detailing Lead Machine</strong>, we specialize in high-ticket lead generation for automotive detailing and PPF studios. We help you take control of your local SEO, ditch underperforming agencies, and book out your bays with premium clients.</p>
+                <p style="margin-bottom: 0;">Ready to dominate your local market? Drop us a line: <br><a href="mailto:passhhu15@gmail.com" style="color: var(--primary-orange); text-decoration: none; font-weight: 600;">passhhu15@gmail.com</a></p>
+            </div>
+        </div>
 
     </div>
 </body>
