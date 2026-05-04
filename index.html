@@ -87,7 +87,7 @@
         .container {
             max-width: 850px;
             margin: 0 auto;
-            padding: 40px 20px 80px 20px;
+            padding: 40px 20px 40px 20px;
         }
 
         .impact-verification {
@@ -221,7 +221,7 @@
             color: var(--text-main);
         }
         
-        details p { margin-top: 15px; margin-bottom: 0; padding-left: 30px; }
+        details p { margin-top: 15px; margin-bottom: 0; padding-left: 30px; font-size: 1rem;}
 
         /* Glowing Checklists */
         .checklist { list-style: none; padding: 0; }
@@ -273,6 +273,36 @@
         .cta-button:hover {
             transform: translateY(-2px);
             box-shadow: 0 8px 25px rgba(249, 115, 22, 0.5);
+        }
+        
+        /* Footer & Legal Docs */
+        .site-footer {
+            margin-top: 60px;
+            padding-top: 40px;
+            border-top: 1px solid var(--border-color);
+            text-align: center;
+        }
+        
+        .affiliate-disclosure {
+            background: rgba(239, 68, 68, 0.05);
+            border: 1px dashed #ef4444;
+            padding: 15px;
+            border-radius: 8px;
+            font-size: 0.85rem;
+            color: #94a3b8;
+            margin-bottom: 30px;
+            text-align: left;
+        }
+
+        .legal-docs details {
+            text-align: left;
+            background: transparent;
+            border: 1px solid rgba(255,255,255,0.05);
+        }
+
+        .legal-docs summary {
+            font-size: 0.95rem;
+            color: #64748b;
         }
 
         /* Animations */
@@ -404,6 +434,31 @@
                 <p style="margin-bottom: 0;">Ready to dominate your local market? Drop us a line: <br><a href="mailto:passhhu15@gmail.com" style="color: var(--primary-orange); text-decoration: none; font-weight: 600;">passhhu15@gmail.com</a></p>
             </div>
         </div>
+
+        <!-- NEW LEGAL FOOTER FOR COMPLIANCE -->
+        <footer class="site-footer">
+            <div class="affiliate-disclosure">
+                <strong style="color: #f87171;">FTC Affiliate Disclosure:</strong> This site is reader-supported. We only recommend enterprise tools we genuinely believe in. When you click on links to various merchants on this site and make a purchase, this can result in this site earning a commission. Affiliate programs and affiliations include, but are not limited to, the Semrush Affiliate Program via Impact.com.
+            </div>
+
+            <div class="legal-docs">
+                <details>
+                    <summary>Privacy Policy</summary>
+                    <p><strong>Effective Date:</strong> May 2026<br><br>
+                    Detailing Lead Machine ("we", "us", or "our") respects your privacy. We do not sell, trade, or rent your personal identification information to others. If you contact us via email, we will only use your email address to respond to your direct inquiry.<br><br>
+                    <strong>Cookies and Tracking:</strong> We may use standard analytics and affiliate tracking cookies to monitor the performance of our outbound links. This helps us maintain our partnerships with software providers.<br><br>
+                    If you have any questions about this Privacy Policy, the practices of this site, or your dealings with this site, please contact us at: <strong>passhhu15@gmail.com</strong></p>
+                </details>
+                
+                <details>
+                    <summary>Terms of Service</summary>
+                    <p><strong>Educational Purposes Only:</strong> The strategies, playbooks, and advice provided on Detailing Lead Machine are for educational and informational purposes only. SEO and digital marketing landscapes change rapidly. We make no guarantees regarding your ability to achieve specific search engine rankings, traffic levels, or financial results by using our toolkit.<br><br>
+                    By using this website, you agree to take full responsibility for any changes you make to your Google Business Profile or website.</p>
+                </details>
+            </div>
+            
+            <p style="font-size: 0.8rem; margin-top: 30px;">&copy; 2026 Detailing Lead Machine. All rights reserved.</p>
+        </footer>
 
     </div>
 </body>
